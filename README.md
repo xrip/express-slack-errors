@@ -3,7 +3,7 @@ NodeJS ExpressJS middleware that Sends all your express errors/exceptions to Sla
 
 #### Installation
 ``
-npm install express-slack-errors
+npm install express-errors-to-slack
 ``
 
 #### Example usage with Slack API
