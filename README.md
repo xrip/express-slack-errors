@@ -1,4 +1,4 @@
-# express-slack-errors
+# express-errors-to-slack
 NodeJS ExpressJS middleware that Sends all your express errors/exceptions to Slack channel via Slack webhooks (which may be rate limited by slack server) or via Slack API
 
 #### Installation
