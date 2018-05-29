@@ -1,0 +1,33 @@
+{
+  "name": "express-slack-errors",
+  "version": "1.0.0",
+  "description": "Sends all your express errors/exceptions to Slack channel via Slack webhooks (which may be rate limited by slack server) or via Slack API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xrip/express-slack-errors.git"
+  },
+  "keywords": [
+    "express",
+    "slack",
+    "log",
+    "logs",
+    "logging",
+    "middleware",
+    "api"
+  ],
+  "author": "xrip.ru",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/xrip/express-slack-errors/issues"
+  },
+  "homepage": "https://github.com/xrip/express-slack-errors#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "slack-node": "^0.1.8"
+  }
+}
