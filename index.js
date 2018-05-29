@@ -2,7 +2,7 @@ const _ = require('lodash');
 const slackNode = require('slack-node');
 
 function getRemoteAddress(req) {
-    return req.ip || req._remoteAddress || req.connection && req.connection.remoteAddress || undefined;
+    return req.x-real-ip || req.ip || req._remoteAddress || req.connection && req.connection.remoteAddress || undefined;
 }
 
 function createCodeBlock(title, code) {
@@ -48,7 +48,7 @@ function sendErrorToSlack(webhookUri, token, channel, err, req) {
             return createCodeBlock(data.title, data.code);
         }).join(''),
         mrkdwn_in: ['text'],
-        footer: 'express-slack-errors',
+        footer: 'express-errors-to-slack',
         ts: parseInt(Date.now() / 1000)
 
     };
