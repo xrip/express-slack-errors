@@ -1,7 +1,7 @@
 'use strict';
 
 const express = require('express');
-const slackErrors = require('./index.js');
+const slackErrors = require('../index.js');
 
 const app = express();
 
