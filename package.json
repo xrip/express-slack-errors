@@ -1,6 +1,6 @@
 {
   "name": "express-errors-to-slack",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Sends all your express errors/exceptions to Slack channel via Slack webhooks (which may be rate limited by slack server) or via Slack API",
   "main": "index.js",
   "scripts": {
