@@ -2,7 +2,7 @@ const _ = require('lodash');
 const slackNode = require('slack-node');
 
 function getRemoteAddress(req) {
-    return req.x-real-ip || req.ip || req._remoteAddress || req.connection && req.connection.remoteAddress || undefined;
+    return req["x-real-ip"] || req.ip || req._remoteAddress || req.connection && req.connection.remoteAddress || undefined;
 }
 
 function createCodeBlock(title, code) {
